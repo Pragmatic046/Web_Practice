@@ -1,0 +1,192 @@
+/* --------------------------SIGNUP_PAGE-------------------------------------------------------------- */
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkcyan;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+#form {
+    width: 100%;
+    position: relative;
+    left: 10%;
+}
+
+#form-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Segoe UI';
+    width: 80%;
+    color: darkcyan;
+    text-shadow: 0 0 2px darkcyan;
+    /* text-decoration: underline; */
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    width: 80%;
+    color: darkcyan;
+}
+
+input {
+    color: darkcyan;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    width: 80%;
+    height: 20px;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid darkcyan;
+    border-radius: 8px;
+    outline: none;
+}
+
+#submit-btn {
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 33%;
+    transform: translateX(-30%);
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: darkcyan;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 40px;
+    background-color: rgba(7, 184, 184, 0.649);
+    border-radius: 10px;
+    z-index: -1;
+    transition: 400ms;
+}
+
+#submit-btn:hover::before {
+    width: 100%;
+}
+
+/* --------------------------SIGNUP_PAGE_ENDED-------------------------------------------------------------- */
+/* --------------------LOGIN_PAGE---------------------------------------------------- */
+
+#login-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Segoe UI';
+    width: 80%;
+    color: darkcyan;
+    text-shadow: 0 0 2px darkcyan;
+    /* text-decoration: underline; */
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px darkcyan;
+    padding: 20px;
+}
+
+#login-form {
+    width: 100%;
+    position: relative;
+    left: 10%;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+    width: 80%;
+    color: darkcyan;
+}
+
+input {
+    color: darkcyan;
+    font-size: 20px;
+    font-family: 'Segoe UI';
+    width: 80%;
+    height: 20px;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid darkcyan;
+    border-radius: 8px;
+    outline: none;
+}
+
+#to-login-btn {
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 33%;
+    transform: translateX(-30%);
+    margin: 10px 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: darkcyan;
+    z-index: 1;
+    overflow: hidden;
+    /* transition: 500ms; */
+    /* #to-login-btn:hover {
+    background-color: rgb(6, 191, 191);
+} */
+}
+
+#to-login-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(7, 184, 184, 0.649);
+    z-index: -1;
+    transition: 400ms;
+}
+
+#to-login-btn:hover::before {
+    width: 100%;
+}
+
+/* --------------------------LOGIN_PAGE_ENDED-------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */

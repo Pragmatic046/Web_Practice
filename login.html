@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Page</title>
+    <link rel="stylesheet" href="./Stylesheets/new.css">
+    <style>
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 300px;
+            position: relative;
+            top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px darkcyan;
+            padding: 20px;
+        }
+
+        #login-form {
+            width: 100%;
+            position: relative;
+            left: 10%;
+        }
+
+        #login-heading {
+            display: flex;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 900;
+            font-family: 'Segoe UI';
+            width: 20%;
+            color: darkcyan;
+            border: none;
+            padding: 5px;
+            border-radius: 10px;
+            text-shadow: 0 0 10px darkcyan;
+            box-shadow: 0 0 10px darkcyan;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Segoe UI';
+            width: 80%;
+            color: darkcyan;
+        }
+
+        input {
+            color: darkcyan;
+            font-size: 20px;
+            font-family: 'segoe ui';
+            width: 80%;
+            height: 20px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid darkcyan;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        #to-login-btn {
+            width: 50%;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            left: 33%;
+            z-index: 1;
+            transform: translateX(-30%);
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            background-color: darkcyan;
+        }
+
+        #to-login-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            border-radius: 10px;
+            height: 100%;
+            background-color: rgba(7, 184, 184, 0.649);
+            z-index: -1;
+            transition: 400ms;
+        }
+
+        #to-login-btn:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><a href="./index.html"><img src="./Images/logo.png" alt="logo"></a></div>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" id="search">
+            <button id="search-btn" onclick="">Search</button>
+            <button id="signup-btn" onclick="signup()">Sign Up</button>
+            <button id="login-btn" onclick="login()">Log In</button>
+        </div>
+    </nav>
+
+    <!-- ------------Navbar Completed----------------------------------- -->
+
+    <div class="login-container">
+        <span id="login-heading">Log In</span>
+        <form id="login-form">
+            <label for="login-email">Email</label><br>
+            <input type="email" id='login-email'><br>
+            <label for="login-password">Password</label><br>
+            <input type="password" id='login-password'><br><br>
+            <!-- <input type="submit" value="Log In" id="to-login-btn"> -->
+            <button type="button" onclick="auth()" id="to-login-btn">Log In</button>
+        </form>
+    </div>
+
+    <script src="./JS files/javascript.js">
+    </script>
+</body>
+
+</html>

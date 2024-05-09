@@ -1,0 +1,119 @@
+        * {
+            padding: 0px;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            padding: 0 5px;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border: 5px solid darkcyan;
+            border-radius: 50px;
+            transition: 500ms;
+        }
+
+        .logo img:hover {
+            box-shadow: 0 0 10px darkcyan;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            width: 100%;
+            background-color: lightcyan;
+            padding: 10px;
+            border-bottom: 4px solid darkcyan;
+            z-index: 1000;
+
+        }
+
+        .nav-list {
+            display: flex;
+            width: 50%;
+            margin: 0 0 0 10px;
+            align-items: center;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 0px 25px;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: darkcyan;
+            transition: 300ms;
+            font-size: 15px;
+            font-weight: 700;
+            font-family: 'Segoe UI';
+        }
+
+        .nav-list li a:hover {
+            text-shadow: 0 8px 10px darkcyan;
+        }
+
+        #search-btn {
+            margin-right: 0 5px 0 10px;
+            color: white;
+            background-color: darkcyan;
+            border: none;
+            border-radius: 8px;
+            width: 80px;
+            height: 35px;
+            transition: 300ms;
+        }
+
+        #search-btn:hover {
+            background-color: rgb(6, 191, 191);
+        }
+
+        #signup-btn,
+        #login-btn {
+            margin: 0 5px 0 10px;
+            color: white;
+            background-color: darkcyan;
+            border: none;
+            border-radius: 8px;
+            width: 80px;
+            height: 35px;
+            transition: 300ms;
+        }
+
+        #signup-btn:hover,
+        #login-btn:hover {
+            background-color: rgb(6, 191, 191);
+        }
+
+        #search {
+            padding: 5px;
+            margin: 0 5px 0 0;
+            font-size: 14px;
+            color: darkcyan;
+            border: 1px solid darkcyan;
+            border-radius: 8px;
+            width: 200px;
+            height: 25px;
+            outline: none;
+        }
+
+        .right-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+
+        .main {
+            position: relative;
+            top: 100px;
+        }

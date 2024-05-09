@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Page</title>
+    <link rel="stylesheet" href="./Stylesheets/new.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 600px;
+            height: 500px;
+            position: relative;
+            top: 100px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px darkcyan;
+            padding: 20px;
+        }
+
+        #form {
+            width: 100%;
+            position: relative;
+            left: 10%;
+        }
+
+        #form-heading {
+            /* display: flex; */
+            /* justify-content: center; */
+            text-align: center;
+            font-size: 25px;
+            font-weight: 900;
+            font-family: 'Segoe UI';
+            width: 20%;
+            color: darkcyan;
+            text-shadow: 0 0 2px darkcyan;
+            border: none;
+            border-radius: 10px;
+            text-shadow: 0 0 10px darkcyan;
+            box-shadow: 0 0 10px darkcyan;
+            padding: 5px;
+
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Segoe UI';
+            color: darkcyan;
+        }
+
+        input {
+            color: darkcyan;
+            font-size: 20px;
+            font-family: 'Segoe UI';
+            height: 20px;
+            width: 400px;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid darkcyan;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        #submit-btn {
+            width: 50%;
+            height: 40px;
+            font-size: 15px;
+            font-weight: 600;
+            position: relative;
+            left: 40%;
+            transform: translateX(-30%);
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            color: white;
+            background-color: darkcyan;
+            z-index: 1;
+            overflow: hidden;
+            /* transition: 500ms; */
+            /* #submit-btn:hover {
+            background-color: rgb(6, 191, 191);
+        */
+        }
+
+        #submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 40px;
+            background-color: rgba(7, 184, 184, 0.649);
+            border-radius: 10px;
+            z-index: -1;
+            transition: 400ms;
+        }
+
+        #submit-btn:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><a href="./index.html"><img src="./Images/logo.png" alt="logo"></a></div>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="right-nav">
+            <input type="text" id="search">
+            <button type="button" id="search-btn" onclick="">Search</button>
+            <button type="button" id="signup-btn" onclick="signup()">Sign Up</button>
+            <button type="button" id="login-btn" onclick="login()">Log In</button>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <span id="form-heading">Sign Up</span>
+        <form id="signup-form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name"><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email"><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password"><br>
+            <label for="confirm-password">Confirm Password</label><br>
+            <input type="password" id="confirm-password"><br><br>
+            <button type="button" onclick="submit_Data()" id="submit-btn">Submit</button><br>
+        </form>
+    </div>
+
+    <script src="./JS files/javascript.js">
+    </script>
+</body>
+
+</html>
